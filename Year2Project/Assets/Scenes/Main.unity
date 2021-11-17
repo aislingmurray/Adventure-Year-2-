@@ -3094,8 +3094,8 @@ GameObject:
   - component: {fileID: 911111495}
   - component: {fileID: 911111494}
   - component: {fileID: 911111493}
-  - component: {fileID: 911111497}
   - component: {fileID: 911111498}
+  - component: {fileID: 911111497}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3226,9 +3226,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 911111492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fbfae1fbb1d34297e537117b1d4b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 21d1a6ee0ab7bdf4eae6bd80c79c2ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7
 --- !u!95 &911111498
 Animator:
   serializedVersion: 3
