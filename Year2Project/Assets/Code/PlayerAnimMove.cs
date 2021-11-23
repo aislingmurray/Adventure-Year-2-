@@ -32,8 +32,7 @@ public class PlayerAnimMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
-        else 
-            //run
+            
 
         //Animator parameters 
         anim.SetBool("running", horizontalInput != 0);

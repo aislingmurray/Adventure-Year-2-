@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
         if (Thrown)
         {
             var direction = -transform.right + Vector3.up;
-            GetComponent<Rigidbody>().AddForce(direction * speed, ForceMode.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(direction * speed, (ForceMode2D)ForceMode.Impulse);
         }
         transform.Translate(LaunchOffset);
 
