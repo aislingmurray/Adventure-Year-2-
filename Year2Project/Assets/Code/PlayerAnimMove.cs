@@ -8,6 +8,8 @@ public class PlayerAnimMove : MonoBehaviour
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
+    public Projectile LaunchProjectile;
+    public Transform LaunchOffset;
 
     private void Start()
     {
@@ -30,10 +32,17 @@ public class PlayerAnimMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
+        else 
+            //run
 
         //Animator parameters 
         anim.SetBool("running", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(LaunchProjectile, LaunchOffset.position, transform.rotation);
+        }
     }
     private void Jump()
     {
